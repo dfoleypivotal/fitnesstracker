@@ -1,0 +1,25 @@
+{
+  "dataStreamName": "MyStepDataSource",
+  "type": "derived",
+  "application": {
+    "detailsUrl": "http://example.com",
+    "name": "RandallStepApp",
+    "version": "1"
+  },
+  "dataType": {
+    "field": [
+      {
+        "name": "steps",
+        "format": "integer"
+      }
+    ],
+    "name": "com.google.step_count.delta"
+  },
+  "device": {
+    "manufacturer": "Example Manufacturer",
+    "model": "ExampleTablet",
+    "type": "tablet",
+    "uid": "1000001",
+    "version": "1.0"
+  }
+}
