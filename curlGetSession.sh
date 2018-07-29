@@ -1,8 +1,11 @@
 #!/bin/bash
-# Get the refreshed access token from the https://developers.google.com/oauthplayground
-curl \
+# Get the refreshed access token "Bearer" from the https://developers.google.com/oauthplayground
+if [[ -z "${ACCESS_TOKEN}" ]]; then
+  echo "ACCESS_TOKEN has not been set or is invalid. Go to https://developers.google.com/oauthplayground to generate a new token"
+  exit
+ficurl \
   -H "Content-Type: application/json;encoding=utf-8" \
-  -H "Authorization: Bearer ya29.GlsHBkne2Wo-uqiXJtKCnlzrZNsQ_Um1pbYyZLK7XCXr0Tb6_wy3VbmO4uQLylKV6zTG9KMmM2L3nV1ScUEf1nwjk8TYCVGY8s8Isv2oOA-uRzoOn9OvITDNFc85" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
   -X GET https://www.googleapis.com/fitness/v1/users/me/sessions
 
 
