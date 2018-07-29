@@ -1,14 +1,12 @@
 {
   "id": "SessionId0001",
-  "name": "Randalls example workout",
+  "name": "Randalls example workout 3 - type 108",
   "description": "A very intense workout by Randall",
-  "startTimeMillis": 1532453580000,
-  "endTimeMillis":   1532453679000,
-  "version": 1,
+  "startTimeMillis": 1532539980000,
+  "endTimeMillis":   1532547180000,
   "application": {
-    "detailsUrl": "http://example.com",
-    "name": "Foo Example App",
-    "version": "1.0"
+    "packageName": "com.google.android.apps.fitness",
+    "version": "web"
   },
-  "activityType": 1
+  "activityType": 108
 }
