@@ -1,0 +1,14 @@
+{
+  "id": "SessionId0001",
+  "name": "Randalls example workout",
+  "description": "A very intense workout by Randall",
+  "startTimeMillis": 1532453580000,
+  "endTimeMillis":   1532453679000,
+  "version": 1,
+  "application": {
+    "detailsUrl": "http://example.com",
+    "name": "Foo Example App",
+    "version": "1.0"
+  },
+  "activityType": 1
+}
