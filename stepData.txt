@@ -1,0 +1,105 @@
+{"dataSourceId": 
+	"derived:com.google.step_count.delta:Example Manufacturer:ExampleTablet:1000001:MyStepDataSource", 
+	"maxEndTimeNs": 1532453580000000000, "minStartTimeNs": 1532453690000000000,
+	"point": [
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453589000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453580000000000,
+			"value": [
+				{"intVal": 3}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453599000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453590000000000,
+			"value": [
+				{"intVal": 10}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453609000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453600000000000,
+			"value": [
+				{"intVal": 7}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453619000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453610000000000,
+			"value": [
+				{"intVal": 19}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453629000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453620000000000,
+			"value": [
+				{"intVal": 2}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453639000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453630000000000,
+			"value": [
+				{"intVal": 7}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453649000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453640000000000,
+			"value": [
+				{"intVal": 13}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453659000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453650000000000,
+			"value": [
+				{"intVal": 4}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453669000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453660000000000,
+			"value": [
+				{"intVal": 1}
+			]
+		}
+		,
+		{
+			"dataTypeName": "com.google.step_count.delta", 
+			"endTimeNanos":   1532453679000000000,
+			"originDataSourceId": "",
+			"startTimeNanos": 1532453670000000000,
+			"value": [
+				{"intVal": 16}
+			]
+		}
+	]
+}

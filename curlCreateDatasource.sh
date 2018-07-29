@@ -1,7 +1,9 @@
 #!/bin/bash
 # Get the refreshed access token from the https://developers.google.com/oauthplayground
-#!/bin/bash
-ACCESS_TOKEN="ya29.GlsGBhuqthWCXS2iVJCmpkfsqodGjUK4rH2c3dPScLWZYqSYDWud0aayEio59Iz3MuCl5_7SNARJFOVsxBl_s2w5ls0aFpuKaX0d_6nmnAfHxguj5oafCjibp8cQ"
+if [[ -z "${ACCESS_TOKEN}" ]]; then
+  echo "ACCESS_TOKEN has not been set or is invalid. Go to https://developers.google.com/oauthplayground to generate a new token"
+  exit
+fi
 curl \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
