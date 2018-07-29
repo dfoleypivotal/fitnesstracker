@@ -8,7 +8,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453580000000000,
 			"value": [
-				{"intVal": 3}
+				{"intVal": 13}
 			]
 		}
 		,
@@ -18,7 +18,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453590000000000,
 			"value": [
-				{"intVal": 10}
+				{"intVal": 13}
 			]
 		}
 		,
@@ -28,7 +28,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453600000000000,
 			"value": [
-				{"intVal": 7}
+				{"intVal": 10}
 			]
 		}
 		,
@@ -38,7 +38,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453610000000000,
 			"value": [
-				{"intVal": 19}
+				{"intVal": 15}
 			]
 		}
 		,
@@ -48,7 +48,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453620000000000,
 			"value": [
-				{"intVal": 2}
+				{"intVal": 14}
 			]
 		}
 		,
@@ -58,7 +58,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453630000000000,
 			"value": [
-				{"intVal": 7}
+				{"intVal": 13}
 			]
 		}
 		,
@@ -78,7 +78,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453650000000000,
 			"value": [
-				{"intVal": 4}
+				{"intVal": 18}
 			]
 		}
 		,
@@ -88,7 +88,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453660000000000,
 			"value": [
-				{"intVal": 1}
+				{"intVal": 8}
 			]
 		}
 		,
@@ -98,7 +98,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453670000000000,
 			"value": [
-				{"intVal": 16}
+				{"intVal": 15}
 			]
 		}
 	]
