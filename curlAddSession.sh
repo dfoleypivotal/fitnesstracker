@@ -7,4 +7,4 @@ fi
 curl \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -X PUT -d @sessionData.txt https://www.googleapis.com/fitness/v1/users/me/sessions/SessionId0001
+  -X PUT -d @sessionData.json https://www.googleapis.com/fitness/v1/users/me/sessions/SessionId0001

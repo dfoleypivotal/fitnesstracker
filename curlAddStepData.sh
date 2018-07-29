@@ -7,4 +7,4 @@ fi
 curl \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -X PATCH -d @stepData.txt https://www.googleapis.com/fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:Example%20Manufacturer:ExampleTablet:1000001:MyStepDataSource
+  -X PATCH -d @stepData.json https://www.googleapis.com/fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:Example%20Manufacturer:ExampleTablet:1000001:MyStepDataSource

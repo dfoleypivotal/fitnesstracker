@@ -7,4 +7,4 @@ fi
 curl \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -X POST -d @stepDataSource.txt https://www.googleapis.com/fitness/v1/users/me/dataSources
+  -X POST -d @stepDataSource.json https://www.googleapis.com/fitness/v1/users/me/dataSources
