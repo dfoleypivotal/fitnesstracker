@@ -48,8 +48,7 @@ for session in sessions:
     dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
     endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
     print("id: {}, name: {}, Start {}:, End {}:".format(session['id'], session['name'], startTimeStr, endTimeStr))
-else:
-    print("\nNo data found....")
+
 
 
 

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5a99774-78a4-4140-8a42-ec7507db01ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/createSessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/createSessions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getSessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSessions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sessionData2.json" beforeDir="false" afterPath="$PROJECT_DIR$/sessionData2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/settings.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,31 +81,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="7" />
-          <entry key="py" value="2687" />
+          <entry key="py" value="2758" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="7" />
-          <entry key="Python" value="2687" />
+          <entry key="Python" value="2758" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/createSteps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="27" selection-start-line="22" selection-end-line="25" selection-end-column="106" />
-              <folding>
-                <element signature="e#23#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.ini">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getSessions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+            <state relative-caret-position="178">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -132,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createSessions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-529">
+            <state relative-caret-position="-377">
               <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -202,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533222645893" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533223657400" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -377,7 +363,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32624114" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42978725" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -462,7 +448,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createSteps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="-300">
           <caret line="22" column="27" selection-start-line="22" selection-end-line="25" selection-end-column="106" />
           <folding>
             <element signature="e#23#63#0" expanded="true" />
@@ -479,7 +465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createSessions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
+        <state relative-caret-position="-377">
           <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -489,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getSessions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+        <state relative-caret-position="178">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
