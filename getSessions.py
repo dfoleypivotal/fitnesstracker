@@ -33,13 +33,13 @@ body = buf.getvalue()
 
 # Body is a string in some encoding.
 # In Python 2, we can print it without knowing what the encoding is.
-print(body)
+# print(body)
 
 result = json.loads(body)
 
 timezone = pytz.timezone("America/Denver")
 
-
+print("\nGetting Session Data...\n")
 sessions = result['session']
 for session in sessions:
     # print("{}".format(session))
@@ -48,6 +48,8 @@ for session in sessions:
     dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
     endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
     print("id: {}, name: {}, Start {}:, End {}:".format(session['id'], session['name'], startTimeStr, endTimeStr))
+else:
+    print("\nNo data found....")
 
 
 
