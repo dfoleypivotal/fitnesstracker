@@ -12,9 +12,9 @@ def date_to_nano(ts):
 
 if __name__ == '__main__':
 
-    file = open("stepData.txt","w")
+    file = open("stepData.json","w")
 
-
+    
     startTimeStr = 'Jul 24 2018 5:33PM'
     duration_seconds = 10
     records = 10
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     head = "{{\"dataSourceId\": " \
            "\n\t\"derived:com.google.step_count.delta:Example Manufacturer:ExampleTablet:1000001:MyStepDataSource\", " \
            "\n\t\"maxEndTimeNs\": {0}, \"minStartTimeNs\": {1}," \
-           "\n\t\"point\": [".format(startnano, endnano)
+           "\n\t\"point\": [".format(endnano, startnano)
 
 
     file.write(head)
