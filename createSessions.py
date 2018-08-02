@@ -1,20 +1,16 @@
 import pycurl
-from StringIO import StringIO
 import os
 import configparser
 import calendar
-from datetime import datetime
-from urllib import urlencode
+from datetime import datetime, timedelta
 import json
 import cStringIO
-from io import BytesIO
-
 
 def date_to_nano(ts):
     """
     Takes a datetime object and returns POSIX UTC in nanoseconds
     """
-    return calendar.timegm(ts.utctimetuple()) * int(1e2)
+    return calendar.timegm(ts.utctimetuple()) * int(1e3)
 
 if __name__ == '__main__':
 
@@ -23,21 +19,37 @@ if __name__ == '__main__':
     settings = configparser.ConfigParser()
     settings.read(inputfile)
     access_token = settings.get('FIT', 'api.accesstoken')
+    workout_name = raw_input("Enter session name: ")
+    workout_description = raw_input("Enter session Description: ")
+    start_time_str = raw_input("Enter Session Start Date/Time (default=Jul 24 2018 5:33PM): ")
+    if start_time_str == '':
+        start_time_str = 'Jul 24 2018 5:33PM'
+
+    min_str = raw_input("Enter Session Minutes (default 60): ")
+    if min_str == '':
+        min_str = '60'
+
+    startTime = datetime.strptime(start_time_str,'%b %d %Y %I:%M%p')
+
+    startnano = date_to_nano(startTime)
+    endnano = date_to_nano(startTime + timedelta(seconds=(int(min_str) * 60)))
 
     header = ['Content-type: application/json',
               'Authorization: Bearer {}'.format(access_token)]
 
-    tnum =  date_to_nano(datetime.now())
-    session_id = 'RandallId{}'.format(tnum)
+
+    current_nano =  date_to_nano(datetime.now())
+    session_id = 'RandallId{}'.format(current_nano)
+
 
     file = open("sessionData2.json","w")
 
     post_data = {
         "id": "{}".format(session_id),
-        "name": "Randalls example workout {}".format(str(tnum)),
-        "description": "A very intense workout by Randall",
-        "startTimeMillis": 1532539980000,
-        "endTimeMillis":   1532547180000,
+        "name": "{}".format(workout_name),
+        "description": "{}".format(workout_description),
+        "startTimeMillis": startnano,
+        "endTimeMillis":   endnano,
         "application": {
             "packageName": "com.google.android.apps.fitness",
             "version": "web"

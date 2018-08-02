@@ -3,6 +3,10 @@ from StringIO import StringIO
 import os
 import configparser
 import cStringIO
+import json
+import calendar
+from datetime import datetime, timedelta
+import pytz
 
 
 cwd = os.path.dirname(os.path.realpath(__file__))
@@ -30,3 +34,23 @@ body = buf.getvalue()
 # Body is a string in some encoding.
 # In Python 2, we can print it without knowing what the encoding is.
 print(body)
+
+result = json.loads(body)
+
+timezone = pytz.timezone("America/Denver")
+
+
+sessions = result['session']
+for session in sessions:
+    # print("{}".format(session))
+    dt = datetime.fromtimestamp(int('{}000000'.format(session['startTimeMillis']))/1e9)
+    startTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
+    dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
+    endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
+    print("id: {}, name: {}, Start {}:, End {}:".format(session['id'], session['name'], startTimeStr, endTimeStr))
+
+
+
+
+
+
