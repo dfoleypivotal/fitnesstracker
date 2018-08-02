@@ -1,6 +1,6 @@
 {"dataSourceId": 
 	"derived:com.google.step_count.delta:Example Manufacturer:ExampleTablet:1000001:MyStepDataSource", 
-	"maxEndTimeNs": 1532453580000000000, "minStartTimeNs": 1532453690000000000,
+	"maxEndTimeNs": 1532453690000000000, "minStartTimeNs": 1532453580000000000,
 	"point": [
 		{
 			"dataTypeName": "com.google.step_count.delta", 
@@ -8,7 +8,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453580000000000,
 			"value": [
-				{"intVal": 13}
+				{"intVal": 16}
 			]
 		}
 		,
@@ -18,7 +18,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453590000000000,
 			"value": [
-				{"intVal": 13}
+				{"intVal": 3}
 			]
 		}
 		,
@@ -28,7 +28,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453600000000000,
 			"value": [
-				{"intVal": 10}
+				{"intVal": 3}
 			]
 		}
 		,
@@ -38,7 +38,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453610000000000,
 			"value": [
-				{"intVal": 15}
+				{"intVal": 19}
 			]
 		}
 		,
@@ -48,7 +48,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453620000000000,
 			"value": [
-				{"intVal": 14}
+				{"intVal": 20}
 			]
 		}
 		,
@@ -58,7 +58,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453630000000000,
 			"value": [
-				{"intVal": 13}
+				{"intVal": 12}
 			]
 		}
 		,
@@ -68,7 +68,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453640000000000,
 			"value": [
-				{"intVal": 13}
+				{"intVal": 14}
 			]
 		}
 		,
@@ -78,7 +78,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453650000000000,
 			"value": [
-				{"intVal": 18}
+				{"intVal": 7}
 			]
 		}
 		,
@@ -88,7 +88,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453660000000000,
 			"value": [
-				{"intVal": 8}
+				{"intVal": 19}
 			]
 		}
 		,
@@ -98,7 +98,7 @@
 			"originDataSourceId": "",
 			"startTimeNanos": 1532453670000000000,
 			"value": [
-				{"intVal": 15}
+				{"intVal": 11}
 			]
 		}
 	]
