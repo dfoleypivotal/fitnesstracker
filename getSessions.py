@@ -47,7 +47,9 @@ for session in sessions:
     startTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
     dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
     endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
-    print("id: {}, name: {}, Start {}:, End {}:".format(session['id'], session['name'], startTimeStr, endTimeStr))
+    print("id: {}, name: {}, Start: {} {}, End: {} {}".format(session['id'], session['name'], startTimeStr,
+                                                              session['startTimeMillis'],
+                                                              endTimeStr, session['endTimeMillis']))
 
 
 
