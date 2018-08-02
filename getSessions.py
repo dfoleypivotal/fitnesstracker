@@ -8,7 +8,6 @@ import calendar
 from datetime import datetime, timedelta
 import pytz
 
-
 cwd = os.path.dirname(os.path.realpath(__file__))
 inputfile = "{}/settings.ini".format(cwd)
 settings = configparser.ConfigParser()
@@ -33,7 +32,7 @@ body = buf.getvalue()
 
 # Body is a string in some encoding.
 # In Python 2, we can print it without knowing what the encoding is.
-# print(body)
+print(body)
 
 result = json.loads(body)
 
@@ -44,12 +43,15 @@ sessions = result['session']
 for session in sessions:
     # print("{}".format(session))
     dt = datetime.fromtimestamp(int('{}000000'.format(session['startTimeMillis']))/1e9)
+    dt_aware = timezone.localize(dt)
     startTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
     dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
     endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
-    print("id: {}, name: {}, Start: {} {}, End: {} {}".format(session['id'], session['name'], startTimeStr,
+    print("id: {}, Start: {} {}, End: {} {}".format(session['id'], startTimeStr,
                                                               session['startTimeMillis'],
                                                               endTimeStr, session['endTimeMillis']))
+    # print("TZ {}, none {}".format("{}".format(dt_aware.strftime('%Y-%m-%d %H:%M:%S')), "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))))
+
 
 
 
