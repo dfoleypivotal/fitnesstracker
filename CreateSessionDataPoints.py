@@ -30,7 +30,29 @@ if __name__ == '__main__':
    },
    "application": {
     "packageName": "com.google.android.gms"
-   },'''
+   },
+   
+   
+{
+ "session": [
+  {
+   "id": "1533247200000",
+   "startTimeMillis": "1533247200000",
+   "endTimeMillis": "1533250800000",
+   "modifiedTimeMillis": "1533252762107",
+   "application": {
+    "packageName": "com.google.android.apps.fitness",
+    "version": "web"
+   },
+   "activityType": 7
+  }
+ ],
+ "deletedSession": [
+ ],
+ "nextPageToken": "1533252762108"
+}
+   
+   '''
     cwd = os.path.dirname(os.path.realpath(__file__))
     inputfile = "{}/settings.ini".format(cwd)
     settings = configparser.ConfigParser()
@@ -59,19 +81,19 @@ if __name__ == '__main__':
     session_id = 'RandallId{}'.format(current_nano)
 
 
-    file = open("sessionData2.json","w")
+    file = open("sessionData3.json","w")
 
     post_data = {
         "id": "{}".format(session_id),
-        "name": "{}".format(workout_name),
-        "description": "{}".format(workout_description),
+        # "name": "{}".format(workout_name),
+        #3"description": "{}".format(workout_description),
         "startTimeMillis": startnano,
         "endTimeMillis":   endnano,
         "application": {
             "packageName": "com.google.android.apps.fitness",
             "version": "web"
         },
-        "activityType": 108}
+        "activityType":7}
 
     file.write(json.dumps(post_data))
 
@@ -84,7 +106,7 @@ if __name__ == '__main__':
     c.setopt(c.HTTPHEADER, header)
 
     c.setopt(c.UPLOAD, 1)
-    file = open('sessionData2.json')
+    file = open('sessionData3.json')
     c.setopt(c.READDATA, file)
 
     c.perform()
