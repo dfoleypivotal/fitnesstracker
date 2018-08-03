@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
     # print(datasources)
     if datasources is not None:
-        print("\nList of DataSources:")
+        print("\nList of DataSources:\n-------------------")
 
         for datasource in datasources:
             print("Datasource: {}".format(datasource['dataStreamId']))
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     if sessions is not None:
 
-        print("\n\nSessions:")
+        print("\n\nSessions\n--------")
         for session in sessions:
             # print("{}".format(session))
             dt = datetime.fromtimestamp(int('{}000000'.format(session['startTimeMillis']))/1e9)
