@@ -35,7 +35,11 @@ class FitDataset:
         if body == 'Not Found':
             return None
 
-        result = json.loads(body)
+        try:
+            result = json.loads(body)
+        except:
+            return None
+
         point = result['point']
         return point
 
