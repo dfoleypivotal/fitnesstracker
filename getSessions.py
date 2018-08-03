@@ -118,8 +118,11 @@ if __name__ == '__main__':
 
     # print(datasources)
     if datasources is not None:
+        print("\nList of DataSources:")
+
         for datasource in datasources:
             print("Datasource: {}".format(datasource['dataStreamId']))
+
 
     fit_sessions = FitSessions(access_token)
     sessions = fit_sessions.get_sessions()
@@ -129,6 +132,7 @@ if __name__ == '__main__':
 
     if sessions is not None:
 
+        print("\n\nSessions:")
         for session in sessions:
             # print("{}".format(session))
             dt = datetime.fromtimestamp(int('{}000000'.format(session['startTimeMillis']))/1e9)

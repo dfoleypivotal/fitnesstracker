@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5a99774-78a4-4140-8a42-ec7507db01ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getSessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSessions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/settings.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="116" />
-          <entry key="py" value="4620" />
+          <entry key="py" value="4682" />
           <entry key="sh" value="27" />
         </counts>
       </usages-collector>
@@ -94,7 +92,7 @@
         <counts>
           <entry key="JSON" value="116" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="4620" />
+          <entry key="Python" value="4682" />
         </counts>
       </usages-collector>
     </session>
@@ -122,14 +120,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getSessions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+            <state relative-caret-position="104">
+              <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
               <folding>
-                <marker date="1533308712308" expanded="true" signature="190:1120" ph="..." />
-                <marker date="1533308712308" expanded="true" signature="228:237" ph="..." />
-                <marker date="1533308712308" expanded="true" signature="1141:1999" ph="..." />
-                <marker date="1533308712308" expanded="true" signature="1179:1188" ph="..." />
-                <marker date="1533308712308" expanded="true" signature="2017:2019" ph="..." />
+                <marker date="1533309216703" expanded="true" signature="190:1120" ph="..." />
+                <marker date="1533309216703" expanded="true" signature="228:237" ph="..." />
+                <marker date="1533309216703" expanded="true" signature="1141:1999" ph="..." />
+                <marker date="1533309216703" expanded="true" signature="1179:1188" ph="..." />
+                <marker date="1533309216703" expanded="true" signature="2017:2019" ph="..." />
               </folding>
             </state>
           </provider>
@@ -510,14 +508,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getSessions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+        <state relative-caret-position="104">
+          <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
           <folding>
-            <marker date="1533308712308" expanded="true" signature="190:1120" ph="..." />
-            <marker date="1533308712308" expanded="true" signature="228:237" ph="..." />
-            <marker date="1533308712308" expanded="true" signature="1141:1999" ph="..." />
-            <marker date="1533308712308" expanded="true" signature="1179:1188" ph="..." />
-            <marker date="1533308712308" expanded="true" signature="2017:2019" ph="..." />
+            <marker date="1533309216703" expanded="true" signature="190:1120" ph="..." />
+            <marker date="1533309216703" expanded="true" signature="228:237" ph="..." />
+            <marker date="1533309216703" expanded="true" signature="1141:1999" ph="..." />
+            <marker date="1533309216703" expanded="true" signature="1179:1188" ph="..." />
+            <marker date="1533309216703" expanded="true" signature="2017:2019" ph="..." />
           </folding>
         </state>
       </provider>
