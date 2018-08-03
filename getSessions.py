@@ -1,11 +1,14 @@
 import pycurl
-from StringIO import StringIO
+try:
+    import cStringIO as BytesIO
+#    from StringIO import StringIO
+except ImportError:
+    from io import BytesIO
 import os
 import configparser
 import cStringIO
 import json
-import calendar
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 
 class FitDataset:
@@ -29,8 +32,6 @@ class FitDataset:
 
         body = buf.getvalue()
 
-        # Body is a string in some encoding.
-        # In Python 2, we can print it without knowing what the encoding is.
         # print(body)
         if body == 'Not Found':
             return None
@@ -65,8 +66,6 @@ class FitDatasources:
 
         body = buf.getvalue()
 
-        # Body is a string in some encoding.
-        # In Python 2, we can print it without knowing what the encoding is.
         # print(body)
 
         result = json.loads(body)
@@ -74,6 +73,7 @@ class FitDatasources:
             return result['dataSource']
         else:
             return None
+
 
 class FitSessions:
 
@@ -97,8 +97,6 @@ class FitSessions:
 
         body = buf.getvalue()
 
-        # Body is a string in some encoding.
-        # In Python 2, we can print it without knowing what the encoding is.
         # print(body)
 
         result = json.loads(body)
@@ -106,7 +104,6 @@ class FitSessions:
             return result['session']
         else:
             return None
-
 
 
 if __name__ == '__main__':
@@ -127,10 +124,8 @@ if __name__ == '__main__':
         for datasource in datasources:
             print("Datasource: {}".format(datasource['dataStreamId']))
 
-
     fit_sessions = FitSessions(access_token)
     sessions = fit_sessions.get_sessions()
-
 
     timezone = pytz.timezone("America/Denver")
 
@@ -163,12 +158,3 @@ if __name__ == '__main__':
                         print("\t\tValue: {}, StartTime: {}, EndTime: {}".format(point['value'], startTimeStr, endTimeStr))
                         # print("\t\tValue: {}, StartTime: {}, EndTime: {}".format(point['value'], point['startTimeNanos'], point['endTimeNanos']))
                     print("")
-
-
-
-
-
-
-
-
-
