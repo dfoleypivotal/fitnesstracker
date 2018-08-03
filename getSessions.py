@@ -144,9 +144,9 @@ if __name__ == '__main__':
             startTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
             dt = datetime.fromtimestamp(int('{}000000'.format(session['endTimeMillis']))/1e9)
             endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
-            print("Session: (id: {}, Start: {} {}, End: {} {})".format(session['id'], startTimeStr,
-                                                                      session['startTimeMillis'],
-                                                                      endTimeStr, session['endTimeMillis']))
+            print("Session: (id: {}, Start: {}, End: {}, (Millis {}-{})".format(session['id'], startTimeStr,
+                                                                      endTimeStr, session['startTimeMillis'],
+                                                                      session['endTimeMillis']))
             fit_dataset = FitDataset(access_token)
             for datasource in datasources:
                 points = fit_dataset.get_dataset_points(datasource['dataStreamId'], session['startTimeMillis'] + '000000-' + session['endTimeMillis'] + '000000')
@@ -154,20 +154,16 @@ if __name__ == '__main__':
                     print("\tDataStreamID: {}".format(datasource['dataStreamId']))
 
                     for point in points:
-                        print("\t\tValue: {}, StartTime: {}, EndTime: {}".format(point['value'], point['startTimeNanos'], point['endTimeNanos']))
 
-                        '''
-                        value = points[0]
-                        value_dict = value[0]
-                        value_str = ""
-                        if 'intVal' in value_dict:
-                            value_str = str(value_dict['intVal'])
-                        else:
-                            if 'fpVal' in value_dict:
-                                value_str = str(value_dict['fpVal'])
-    
-                        print("\tStore Value = {}, for DataStreamID: {}".format(value_str, datasource['dataStreamId']))
-                        '''
+                        dt = datetime.fromtimestamp(int('{}'.format(point['startTimeNanos']))/1e9)
+                        dt_aware = timezone.localize(dt)
+                        startTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
+                        dt = datetime.fromtimestamp(int('{}'.format(point['endTimeNanos']))/1e9)
+                        endTimeStr = "{}".format(dt.strftime('%Y-%m-%d %H:%M:%S'))
+                        print("\t\tValue: {}, StartTime: {}, EndTime: {}".format(point['value'], startTimeStr, endTimeStr))
+                        # print("\t\tValue: {}, StartTime: {}, EndTime: {}".format(point['value'], point['startTimeNanos'], point['endTimeNanos']))
+                    print("")
+
 
 
 
